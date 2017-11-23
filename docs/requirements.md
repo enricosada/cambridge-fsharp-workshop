@@ -11,6 +11,8 @@ permalink: /requirements/
   - Ionide-fsharp extension
 - [Docker and images](#docker) (optional)
 
+Any v2.0.x (sdk, runtime, docker, etc) is ok. Instructions show latest avaiable.
+
 <a name="dotnetsdk"></a>
 ## .NET Core Sdk 2.0
 
@@ -96,23 +98,23 @@ docker run --rm microsoft/dotnet:2.0-sdk dotnet --info
 should print:
 
 ```
-.NET Command Line Tools (2.0.0)
+.NET Command Line Tools (2.0.3)
 
 Product Information:
- Version:            2.0.0
- Commit SHA-1 hash:  cdcd1928c9
+ Version:            2.0.3
+ Commit SHA-1 hash:  eb1d5ee318
 
 Runtime Environment:
  OS Name:     debian
  OS Version:  9
  OS Platform: Linux
  RID:         linux-x64
- Base Path:   /usr/share/dotnet/sdk/2.0.0/
+ Base Path:   /usr/share/dotnet/sdk/2.0.3/
 
 Microsoft .NET Core Shared Framework Host
 
-  Version  : 2.0.0
-  Build    : e8b8861ac7faf042c87a5c2f9f2d04c98b69f28d
+  Version  : 2.0.3
+  Build    : a9190d4a75f4a982ae4b4fa8d1a24526566c69df
 ```
 
 and
@@ -126,6 +128,6 @@ should print:
 ```
 Microsoft .NET Core Shared Framework Host
 
-  Version  : 2.0.0
-  Build    : e8b8861ac7faf042c87a5c2f9f2d04c98b69f28d
+  Version  : 2.0.3
+  Build    : a9190d4a75f4a982ae4b4fa8d1a24526566c69df
 ```
