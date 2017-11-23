@@ -46,14 +46,14 @@ For unix/mac, Windows doesnt need it.
 
 [http://www.mono-project.com/download/](http://www.mono-project.com/download/)
 
-Recommended 5.2 , required >= 4.8
+Recommended latest stable 5.4 (or 5.2), required >= 4.8
 
-the package is the `mono-complete`, who contains the `mono-devel`
+the package is the `mono-complete` (who already contains the `mono-devel`)
 
 Check if is installed correctly with `mono --version` should print:
 
 ```
-Mono JIT compiler version 5.2.0.224 (tarball Mon Sep 18 17:33:20 UTC 2017)
+Mono JIT compiler version 5.4.1.6 (tarball Wed Nov  8 20:37:08 UTC 2017)
 ```
 
 <a name="vscode"></a>
