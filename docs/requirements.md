@@ -66,6 +66,12 @@ Extensions to install ([docs](https://code.visualstudio.com/docs/editor/extensio
 - [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 - [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp)
 
+After first install, you should download also the .net core debugger.
+
+- open VS Code
+- in the `Command Palette` run `> Debug: Download .NET Core Debugger`
+- this will focus the `C#` panel below, and start the download and install of the debugger
+
 <a name="docker"></a>
 ## Docker images
 
