@@ -29,10 +29,10 @@ Prerequisites:
 Check if is installed correctly with `dotnet --info` should print:
 
 ```
-.NET Command Line Tools (2.0.0)
+.NET Command Line Tools (2.0.3)
 
 Product Information:
- Version:            2.0.0
+ Version:            2.0.3
 
 <additional info about os>
 ```
