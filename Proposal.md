@@ -1,27 +1,12 @@
-This workshop will help library authors and F# developers to fully use the new .NET Sdk in their existing projects. 
+Target audience is mixed:
 
-I'll provide an example project, if partecipants doesnt want use their project. 
+- new developers who want to approach F# from zero, using .NET Core in an xplat environment 
+- experienced F# developers who want to know what are the changes in the new sdk, not just for .NET Core
 
-- support multiple target frameworks, cross platform (mono, .NET and .net core)
-- add abstraction like .NET Standard 
-- new simplified msbuild project and extensibility
+Goal of this workshop is to show the lovely and improved feedback loop for developers, in all common scenarios:
 
-Participants can bring their existing library/project/app to the workshop and i will guide them to:
-  - use new sdk (in parallel or directly migrating) 
-  - check for .net standard portability issues (dependencies/code)
-  - add .net standard support for libraries
-  - support previous target framework (.NET)
-  - ~adapt build orchestration and CI (like travis/appveyor)~
-  - make it cross platform friendly to developers, not only final artifact
-  
-  - ~add unsupported profiles (like PCL) to final nuget package, with minimal maintenance~
-
-And finally add new functionalities like:
-
-- templates, using new .NET Templating
-- show useful basic msbuild configurability for developers and maintainers
-- new msbuild extensibility for library authors
-- add .net core support if make sense (console app)
-- extend .net cli tools if make sense in the project
-- dockerize it The participants can use their preferred ide/editors and OS
+- From zero to a new console app, adding dependancies, build it, debug it, and finally the options for deployments (self contained, framework dependent) 
+- From zero to new library, adding tests, create a nuget package, push it to a feed. 
+- How to build and deploy to docker and example web app 
+- A tour of the extensibility of sdk, to add new tools or create a template (based on new .NET Templating)
 
