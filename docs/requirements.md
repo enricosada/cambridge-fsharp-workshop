@@ -75,11 +75,11 @@ After first install, you should download also the .net core debugger.
 - open VS Code
 - in the `Command Palette` run `> Debug: Download .NET Core Debugger`
 
-![command]({{ "/files/vscode/command_to_install_debugger.png" }})
+![command]({{ "/assets/img/vscode/command_to_install_debugger.png" }})
 
 - this will focus the `C#` panel below, and start the download and install of the debugger
 
-![command]({{ "/files/vscode/installing_debugger_finished.png" }})
+![command]({{ "/assets/img/vscode/installing_debugger_finished.png" }})
 
 <a name="docker"></a>
 ## Docker images
