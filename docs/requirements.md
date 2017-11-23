@@ -54,6 +54,18 @@ Check if is installed correctly with `mono --version` should print:
 Mono JIT compiler version 5.2.0.224 (tarball Mon Sep 18 17:33:20 UTC 2017)
 ```
 
+<a name="vscode"></a>
+## Visual Studio Code
+
+Install:
+
+[https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+
+Extensions to install ([docs](https://code.visualstudio.com/docs/editor/extension-gallery)):
+
+- [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+- [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp)
+
 <a name="docker"></a>
 ## Docker images
 
@@ -109,15 +121,3 @@ Microsoft .NET Core Shared Framework Host
   Version  : 2.0.0
   Build    : e8b8861ac7faf042c87a5c2f9f2d04c98b69f28d
 ```
-
-<a name="vscode"></a>
-## Visual Studio Code
-
-Install:
-
-[https://code.visualstudio.com/download](https://code.visualstudio.com/download)
-
-Extensions to install ([docs](https://code.visualstudio.com/docs/editor/extension-gallery)):
-
-- [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
-- [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp)
