@@ -40,7 +40,9 @@ Product Information:
 <a name="mono"></a>
 ## Mono on unix/mac
 
-For unix/mac, Windows doesnt need it
+For unix/mac, Windows doesnt need it.
+
+`NOTE` it's a prerequisite of Ionide extension in VS Code, but [is going away soon](https://github.com/ionide/ionide-vscode-fsharp/wiki/Version-3.13.0#experimental---use-net-core-fsautocomplete)
 
 [http://www.mono-project.com/download/](http://www.mono-project.com/download/)
 
