@@ -37,6 +37,8 @@ This is the entrypoint of the of the program, the `main` and the args passed to 
 When ionide is started, make the `F# PROJECT EXPLORER` visible on bottom-left corner of code.
 This contains the projects loaded
 
+![project explorer]({{ site.baseurl }}/assets/ionide_project_explorer.png)
+
 Now, let's build it.
 It can be done in the the terminal
 
@@ -53,14 +55,16 @@ dotnet build
 This compile the project and show the output:
 
 ```
-Microsoft (R) Build Engine version 15.3.409.57025 for .NET Core
+Microsoft (R) Build Engine version 15.4.8.50001 for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-  sample1 -> E:\wssf\sample1\bin\Debug\netcoreapp2.0\sample1.dll
+  sample1 -> E:\cambridge\sample1\bin\Debug\netcoreapp2.0\sample1.dll
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
+
+Time Elapsed 00:00:01.23
 ```
 
 So the output is `bin/Debug/netcoreapp2.0/sample1.dll`
@@ -110,7 +114,8 @@ Two possibilities of deployment:
   - CONS bigger size of binaries
   - CONS distinct binaries for all os
   - PRO is a normal native app (`app.exe` or `app`)
-  - PRO doesnt require .net core runtime installed on target machine,- CONS require .net core deps (like libunwind, OpenSSL) installed
+  - PRO doesnt require .net core runtime installed on target machine
+  - CONS require .net core deps (like libunwind, see docs) installed
 
 ### First let's try FDD
 
@@ -132,7 +137,7 @@ dotnet sample1.dll
 Run 
 
 ```
-dotnet publish --self-contained --runtime win-x64 --output out
+dotnet publish --runtime win-x64 --output out
 ```
 
 and that directory `out` contains `sample1.exe`
@@ -140,16 +145,16 @@ and that directory `out` contains `sample1.exe`
 Doing the same for osx
 
 ```
-dotnet publish --self-contained --runtime osx-x64 --output outosx
+dotnet publish --runtime osx-x64 --output outosx
 ```
 
 Or linux, run
 
 ```
-dotnet publish --self-contained -r linux-x64 -o outlinux -c Release
+dotnet publish -r linux-x64 -o outlinux -c Release
 ```
 
-NOTE on linux .net core apps has some requirements, like the `libunwind8` package installed (can be installed with `apt-get install libunwind8`)
+NOTE on linux .net core apps has some requirements, like the `libunwind` package installed (see docs)
 
 
 **NOTE** is possibile to bundle these deps as local copies, ref https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md
@@ -160,6 +165,15 @@ NOTE on linux .net core apps has some requirements, like the `libunwind8` packag
 ```xml
     <RuntimeIdentifiers>win10-x64;osx-x64</RuntimeIdentifiers>
 ```
+
+### Ionide vscode integration
+
+To run it in debugging, without any setting, just:
+
+- Right click on the project
+- do `Debug`
+
+![project explorer]({{ site.baseurl }}/assets/ionide_run_debug.png)
 
 ### VSCode settings
 
