@@ -9,4 +9,3 @@ Goal of this workshop is to show the lovely and improved feedback loop for devel
 - From zero to new library, adding tests, create a nuget package, push it to a feed. 
 - How to build and deploy to docker and example web app 
 - A tour of the extensibility of sdk, to add new tools or create a template (based on new .NET Templating)
-

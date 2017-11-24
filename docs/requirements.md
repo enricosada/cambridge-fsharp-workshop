@@ -75,11 +75,11 @@ After first install, you should download also the .net core debugger.
 - open VS Code
 - in the `Command Palette` run `> Debug: Download .NET Core Debugger`
 
-![command]({{ site.url }}/cambridge-fsharp-workshop/assets/command_to_install_debugger.png)
+![command]({{ site.baseurl }}/assets/command_to_install_debugger.png)
 
 - this will focus the `C#` panel below, and start the download and install of the debugger
 
-![installed]({{ site.url }}/cambridge-fsharp-workshop/assets/installing_debugger_finished.png)
+![installed]({{ site.baseurl }}/assets/installing_debugger_finished.png)
 
 <a name="docker"></a>
 ## Docker images
