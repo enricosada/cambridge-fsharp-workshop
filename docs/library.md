@@ -134,14 +134,6 @@ to create a new project (`-o` is needed to specify output path)
 dotnet new expecto -n l1.Test2 -o l1.Tests2 -lang f#
 ```
 
-**NOTE** The expecto template use .net core 1, let's change it to .net core 2
-- remove `FSharp.NET.Sdk`, `FSharp.Core` references 
-- change tfm to `<TargetFramework>netcoreapp2.0</TargetFramework>`
-- change `Microsoft.DotNet.Watcher.Tools` version to `2.0.0`
-
-more info in [netcorecli-fsc wiki page 1.0 -> 2.0](https://github.com/dotnet/netcorecli-fsc/wiki/How-to-migrate-1.0-projects-to-2.0)
-
-
 And add the project reference to `l1`
 
 ```
@@ -172,7 +164,7 @@ dotnet pack l1 -c Release /p:Version=1.2.3
 this will create a package
 
 ```
-Successfully created package 'E:\wssf\sample2\l1\bin\Release\l1.1.2.3.nupkg'.
+Successfully created package 'E:\cambridge\sample2\l1\bin\Release\l1.1.2.3.nupkg'.
 ```
 
 To specify other package metadata (like `Version`), is possibile to:
@@ -192,11 +184,11 @@ For example, to push to myget feed
 RUN
 
 ```
-dotnet nuget push l1/bin/Release/l1.1.2.3.nupkg -s https://www.myget.org/F/openfsharp-workshop/api/v2/package -k e89848f5-a549-4238-8016-24cbed33dfcc
+dotnet nuget push l1/bin/Release/l1.1.2.3.nupkg -s https://www.myget.org/F/cambridge-fsharp-workshop/api/v2/package -k fb4e7360-9c89-4a25-982f-64760ca089a5
 ```
 
 to restore from a dev feed:
 
 ```
-dotnet add package l1 --version 1.2.3 --source https://www.myget.org/F/openfsharp-workshop/api/v3/index.json
+dotnet add package l1 --version 1.2.3 --source https://www.myget.org/F/cambridge-fsharp-workshop/api/v3/index.json
 ```
