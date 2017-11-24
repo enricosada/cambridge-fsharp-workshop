@@ -53,7 +53,7 @@ Is now possibile to use the methods from l1 in c1
 Add to main
 
 ```fsharp
-    l1.Say.hello "Openfsharp!"
+    l1.Say.hello "Cambridge!"
 ```
 
 to run it:
@@ -93,7 +93,7 @@ and test it in `Tests.fs`
 ```fsharp
 [<Fact>]
 let ``hello`` () =
-    Assert.Equal("Hello openfsharp", (l1.Say.helloMessage "openfsharp conf"))
+    Assert.Equal("Hello cambridge", (l1.Say.helloMessage "cambridge conf"))
 ```
 
 the test can be run with `dotnet test l1.Tests`
@@ -144,7 +144,7 @@ and add a new test case
 
 ```fsharp
     testCase "helloMessage" <| fun _ ->
-      Expect.equal (l1.Say.helloMessage "openfsharp") "Hello openfsharp conf" "These should equal"
+      Expect.equal (l1.Say.helloMessage "cambridge") "Hello cambridge conf" "These should equal"
 ```
 
 and run it with `dotnet run -p l1.Tests2`.
